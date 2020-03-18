@@ -81,13 +81,37 @@ function selectOne($table, $conditions)
 
 }
 
+function create($table, $data)
+{
+    global $conn;
+    // $sql = "INSERT INTO users SET username=?, admin=?, email=?, password=?"
+    $sql = "INSERT INTO $table SET ";
+
+    $i = 0;
+    foreach ($data as $key => $value) {
+        if ($i === 0) {
+            $sql = $sql . " $key=?";
+        } else {
+            $sql = $sql . ", $key=?";
+        }
+        $i++;
+
+    }
+    
+    $stmt = executeQuery($sql, $data);
+    $id = $stmt->insert_id;
+    return $id;
+
+}
 
 
-$conditions = [
+$data = [
+    'username' => 'Mampi',
     'admin' => 0,
-    'username' => 'Felana'
+    'email' => 'mampi@andee.com',
+    'password' => 'mampionona'
 ];
 
 
-$users = selectOne('users', $conditions);
-dd($users);
+$id = create('users', $data);
+dd($id);
