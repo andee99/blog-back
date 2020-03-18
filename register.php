@@ -1,3 +1,5 @@
+<?php include("app/controllers/users.php") ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +21,7 @@
     <?php include("app/includes/header.php"); ?>
 
     <div class="auth-content">
+    
         <form action="register.php" method="post">
             <h2 class="form-title">Sign up</h2>
 
@@ -32,7 +35,7 @@
             </div>
 
             <div>
-                <label>Email Address</label>
+                <label>Email &nbsp;address</label>
                 <input type="text" name="email" class="text-input">
             </div>
 
@@ -43,7 +46,7 @@
 
             <div>
                 <label>Password Confirmation</label>
-                <input type="password" name="password" class="text-input">
+                <input type="password" name="passwordConf" class="text-input">
             </div>
             <div>
                 <button type="submit" name="register-btn" class="btn btn-big">Register</button>

@@ -144,8 +144,3 @@ function delete($table, $id)
     return $stmt->affected_rows;
 
 }
-
-
-$id = delete('users', 2);
-
-dd($id);
