@@ -28,7 +28,12 @@ if (isset($_POST['register-btn'])) {
         $_SESSION['admin'] = $user['admin'];
         $_SESSION['message'] = 'You are now logged in !';
         $_SESSION['type'] = 'success';
-        header('location: index.php');
+
+        if ($_SESSION['admin']) {
+            header('location: admin/dashboard.php');
+        } else {
+            header('location: index.php');
+        }  
         exit();
     } else {
         $username = $_POST['username'];

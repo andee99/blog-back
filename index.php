@@ -22,6 +22,9 @@ include("app/database/db.php");
 <body>
     <!-- include header here -->
     <?php include("app/includes/header.php"); ?>
+    <?php include("app/includes/messages.php"); ?>
+
+    
 
     <!-- Page Wrapper -->
     <div class="page-wrapper">
