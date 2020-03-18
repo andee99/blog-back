@@ -39,12 +39,12 @@
 
             <div>
                 <label>Password</label>
-                <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
+                <input type="password" name="password"  class="text-input">
             </div>
 
             <div>
                 <label>Password Confirmation</label>
-                <input type="password" name="passwordConf" value="<?php echo $passwordConf; ?>" class="text-input">
+                <input type="password" name="passwordConf"  class="text-input">
             </div>
             <div>
                 <button type="submit" name="register-btn" class="btn btn-big">Register</button>
