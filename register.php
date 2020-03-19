@@ -29,22 +29,22 @@
 
             <div>
                 <label>Username</label>
-                <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
+                <input type="text" name="username" placeholder="Your username here" value="<?php echo $username; ?>" class="text-input">
             </div>
 
             <div>
                 <label>Email &nbsp;address</label>
-                <input type="text" name="email" value="<?php echo $email; ?>" class="text-input">
+                <input type="text" name="email" placeholder="Your email address here" value="<?php echo $email; ?>" class="text-input">
             </div>
 
             <div>
                 <label>Password</label>
-                <input type="password" name="password"  class="text-input">
+                <input type="password" name="password" placeholder="Your new password here" class="text-input">
             </div>
 
             <div>
                 <label>Password Confirmation</label>
-                <input type="password" name="passwordConf"  class="text-input">
+                <input type="password" name="passwordConf" placeholder="Your password confirmation here"  class="text-input">
             </div>
             <div>
                 <button type="submit" name="register-btn" class="btn btn-big">Register</button>

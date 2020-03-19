@@ -1,3 +1,5 @@
+<?php include("app/controllers/users.php") ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,23 +22,22 @@
     <?php include("app/includes/header.php"); ?>
     <div class="auth-content">
         <form action="login.php" method="post">
-            <h2 class="form-title">Log in</h2>
+            <h2 class="form-title">Login Form</h2>
+
+            <?php include("app/helpers/formErrors.php"); ?>
 
             <div>
                 <label>Username</label>
-                <input type="text" name="username" class="text-input">
+                <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Your username here" class="text-input">
             </div>
             <div>
                 <label>Password</label>
-                <input type="password" name="password" class="text-input">
+                <input type="password" name="password" value="<?php echo $password; ?>" placeholder="Your password here" class="text-input">
             </div>
             <div>
                 <button type="submit" name="login-btn" class="btn btn-big">Log in</button>
             </div>
             <p>You don't have an account yet? Click <a href="register.php">here</a> to register.</p>
-    
-
-
 
         </form>
     </div>

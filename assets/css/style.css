@@ -24,16 +24,20 @@ header{
     list-style: none;
 }
 
-.success{
+.success {
     color: green;
     border: 1px solid green;
     background: lightgreen;
+    text-align: center;
+    width: 35%;
 }
 
 .error{
     color: red;
     border: 1px solid red;
     background: rgb(255, 191, 191);
+    text-align: center;
+    width: 35%;
 }
 
 h1, 
