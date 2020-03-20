@@ -61,7 +61,7 @@ if (isset($_POST['login-btn'])) {
         if ($user && password_verify($_POST['password'], $user['password'])) {
             loginUser($user);
         } else{
-            array_push($errors, 'Some informations do not seem correct !! Please verify and tap one more');
+            array_push($errors, "The credentials don't seem correct, try again!");
         }
 
     }
